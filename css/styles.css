@@ -1,0 +1,261 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes importadas */
+body {
+    font-family: 'UnifrakturMaguntia', sans-serif;
+}
+
+/* Estilos para el header */
+.header {
+    display: flex;
+    background-color: #000000;
+    /* Fondo oscuro para mejor contraste */
+    padding: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo {
+    height: 20px;
+    /* Ajustá la altura según sea necesario */
+    width: auto;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.header__nav-item {
+    padding: 18px;
+    font-size: 18px;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.header__nav-link:hover {
+    color: #bf0000;
+}
+
+/* Estilos para la sección hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    text-align: center;
+}
+
+.hero__title {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero__subtitle {
+    font-family: 'UnifrakturMaguntia', sans-serif;
+    font-size: 24px;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.hero__button {
+    width: 158px;
+    padding: 18px;
+    border-radius: 18px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(138, 13, 13);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hero__button--reserve:hover {
+    background-color: #ac1818;
+    box-shadow: 0px 0px 10px 4px rgba(255, 255, 255, 0.356);
+    /* Brillo exterior */
+    transition: 0.5s ease-in-out;
+}
+
+/* Estilos para el footer */
+.footer {
+    display: flex;
+    background-color: #000000;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__text,
+.footer__year {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0 5px;
+}
+
+body {
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Para dispositivos móviles pequeños (por ejemplo, iPhone SE) */
+@media (max-width: 480px) {
+    .header__logo {
+        height: 120px; /* Ajustamos el logo */
+    }
+
+    .header__nav {
+        flex-direction: column; /* Menú de navegación en columna */
+    }
+
+    .header__nav-item {
+        font-size: 16px; /* Reducimos el tamaño de fuente */
+        padding: 10px;
+    }
+
+    .hero__title {
+        font-size: 28px; /* Título más pequeño */
+    }
+
+    .hero__subtitle {
+        font-size: 18px; /* Subtítulo más pequeño */
+    }
+
+    .hero__button {
+        width: 100%; /* Botón en toda la anchura */
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .footer__text,
+    .footer__year {
+        font-size: 14px; /* Tamaño de fuente más pequeño en el footer */
+    }
+}
+
+/* Para tablets (de 480px a 768px, ejemplo iPad) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header__logo {
+        height: 130px; /* Ajustamos el logo */
+    }
+
+    .header__nav {
+        flex-direction: column; /* Menú en columna */
+    }
+
+    .header__nav-item {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .hero__title {
+        font-size: 32px; /* Título más grande que en móvil */
+    }
+
+    .hero__subtitle {
+        font-size: 20px;
+    }
+
+    .hero__button {
+        width: 120px; /* Botón más pequeño */
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* Para pantallas medianas (por ejemplo, laptops pequeñas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header__logo {
+        height: 140px; /* Ajustamos el logo */
+    }
+
+    .header__nav {
+        flex-direction: row; /* Menú en fila */
+    }
+
+    .header__nav-item {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .hero__title {
+        font-size: 36px;
+    }
+
+    .hero__subtitle {
+        font-size: 24px;
+    }
+
+    .hero__button {
+        width: 158px;
+        font-size: 18px;
+        padding: 18px;
+    }
+}
+
+/* Para pantallas grandes (desktops y pantallas grandes) */
+@media (min-width: 1025px) {
+    .header__logo {
+        height: 150px; /* Logo más grande */
+    }
+
+    .header__nav {
+        flex-direction: row;
+    }
+
+    .header__nav-item {
+        font-size: 20px; /* Texto más grande en pantallas grandes */
+        padding: 20px;
+    }
+
+    .hero__title {
+        font-size: 42px; /* Título más grande */
+    }
+
+    .hero__subtitle {
+        font-size: 28px; /* Subtítulo más grande */
+    }
+
+    .hero__button {
+        width: 180px;
+        font-size: 20px;
+        padding: 20px;
+    }
+}
