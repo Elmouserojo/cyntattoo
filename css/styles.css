@@ -22,9 +22,10 @@ body {
 
 
 .header__logo {
-    height: 20px;
+    height: 300px;
     /* Ajustá la altura según sea necesario */
     width: auto;
+    max-width: 100%;
 }
 
 .header__nav {
@@ -138,7 +139,7 @@ main {
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone SE) */
 @media (max-width: 480px) {
     .header__logo {
-        height: 120px; /* Ajustamos el logo */
+        height: 80px; /* Ajustamos el logo */
     }
 
     .header__nav {
@@ -173,7 +174,7 @@ main {
 /* Para tablets (de 480px a 768px, ejemplo iPad) */
 @media (min-width: 481px) and (max-width: 768px) {
     .header__logo {
-        height: 130px; /* Ajustamos el logo */
+        height: 85px; /* Ajustamos el logo */
     }
 
     .header__nav {
@@ -233,7 +234,7 @@ main {
 /* Para pantallas grandes (desktops y pantallas grandes) */
 @media (min-width: 1025px) {
     .header__logo {
-        height: 150px; /* Logo más grande */
+        height: 95px; /* Logo más grande */
     }
 
     .header__nav {
