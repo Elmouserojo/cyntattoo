@@ -134,6 +134,8 @@ body {
 
 main {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone SE) */
@@ -187,7 +189,7 @@ main {
     }
 
     .hero__title {
-        font-size: 32px; /* Título más grande que en móvil */
+        font-size: 40px; /* Título más grande que en móvil */
     }
 
     .hero__subtitle {
