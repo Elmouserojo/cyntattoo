@@ -13,7 +13,7 @@ body {
 /* Estilos para el header */
 .header {
     display: flex;
-    background-color: #000000;
+    background-color:transparent;
     /* Fondo oscuro para mejor contraste */
     padding: 18px;
     justify-content: space-between;
@@ -102,7 +102,8 @@ body {
 /* Estilos para el footer */
 .footer {
     display: flex;
-    background-color: #000000;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     padding: 18px;
     justify-content: center;
     align-items: center;
