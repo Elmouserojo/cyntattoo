@@ -13,7 +13,7 @@ body {
 /* Estilos para el header */
 .header {
     display: flex;
-    background-color:transparent;
+    background-color: transparent;
     /* Fondo oscuro para mejor contraste */
     padding: 18px;
     justify-content: space-between;
@@ -140,17 +140,6 @@ main {
     justify-content: center;
 }
 
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
-
 .contact-form {
     background-color: white;
     padding: 20px 30px;
@@ -206,46 +195,59 @@ main {
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone SE) */
 @media (max-width: 480px) {
     .header__logo {
-        height: 80px; /* Ajustamos el logo */
+        height: 80px;
+        /* Ajustamos el logo */
     }
 
     .header__nav {
-        flex-direction: column; /* Menú de navegación en columna */
+        flex-direction: column;
+        /* Menú de navegación en columna */
     }
 
     .header__nav-item {
-        font-size: 16px; /* Reducimos el tamaño de fuente */
+        font-size: 16px;
+        /* Reducimos el tamaño de fuente */
         padding: 10px;
     }
 
     .hero__title {
-        font-size: 28px; /* Título más pequeño */
+        font-size: 28px;
+        /* Título más pequeño */
     }
 
     .hero__subtitle {
-        font-size: 18px; /* Subtítulo más pequeño */
+        font-size: 18px;
+        /* Subtítulo más pequeño */
     }
 
     .hero__button {
-        width: 100%; /* Botón en toda la anchura */
+        width: 100%;
+        /* Botón en toda la anchura */
         font-size: 16px;
         padding: 12px;
     }
 
     .footer__text,
     .footer__year {
-        font-size: 14px; /* Tamaño de fuente más pequeño en el footer */
+        font-size: 14px;
+        /* Tamaño de fuente más pequeño en el footer */
+    }
+
+    .contact-form{
+        max-height: 450px;
     }
 }
 
 /* Para tablets (de 480px a 768px, ejemplo iPad) */
 @media (min-width: 481px) and (max-width: 768px) {
     .header__logo {
-        height: 85px; /* Ajustamos el logo */
+        height: 85px;
+        /* Ajustamos el logo */
     }
 
     .header__nav {
-        flex-direction: column; /* Menú en columna */
+        flex-direction: column;
+        /* Menú en columna */
     }
 
     .header__nav-item {
@@ -254,7 +256,8 @@ main {
     }
 
     .hero__title {
-        font-size: 40px; /* Título más grande que en móvil */
+        font-size: 40px;
+        /* Título más grande que en móvil */
     }
 
     .hero__subtitle {
@@ -262,7 +265,8 @@ main {
     }
 
     .hero__button {
-        width: 120px; /* Botón más pequeño */
+        width: 120px;
+        /* Botón más pequeño */
         padding: 16px;
         font-size: 16px;
     }
@@ -271,11 +275,13 @@ main {
 /* Para pantallas medianas (por ejemplo, laptops pequeñas) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .header__logo {
-        height: 140px; /* Ajustamos el logo */
+        height: 140px;
+        /* Ajustamos el logo */
     }
 
     .header__nav {
-        flex-direction: row; /* Menú en fila */
+        flex-direction: row;
+        /* Menú en fila */
     }
 
     .header__nav-item {
@@ -301,7 +307,8 @@ main {
 /* Para pantallas grandes (desktops y pantallas grandes) */
 @media (min-width: 1025px) {
     .header__logo {
-        height: 95px; /* Logo más grande */
+        height: 95px;
+        /* Logo más grande */
     }
 
     .header__nav {
@@ -309,16 +316,19 @@ main {
     }
 
     .header__nav-item {
-        font-size: 20px; /* Texto más grande en pantallas grandes */
+        font-size: 20px;
+        /* Texto más grande en pantallas grandes */
         padding: 20px;
     }
 
     .hero__title {
-        font-size: 42px; /* Título más grande */
+        font-size: 42px;
+        /* Título más grande */
     }
 
     .hero__subtitle {
-        font-size: 28px; /* Subtítulo más grande */
+        font-size: 28px;
+        /* Subtítulo más grande */
     }
 
     .hero__button {
