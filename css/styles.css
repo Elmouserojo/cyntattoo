@@ -87,7 +87,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: white;
-    background-color: rgb(138, 13, 13);
+    background-color: #8a0d0d;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
 }
@@ -103,7 +103,7 @@ body {
 .footer {
     display: flex;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     padding: 18px;
     justify-content: center;
     align-items: center;
@@ -124,6 +124,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    backdrop-filter: blur(4px);
 }
 
 html,
@@ -137,6 +138,69 @@ main {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+.contact-form {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #8a0d0d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.contact-form button:hover {
+    background-color: #ac1818;
 }
 
 /* Para dispositivos móviles pequeños (por ejemplo, iPhone SE) */
